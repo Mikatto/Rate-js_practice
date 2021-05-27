@@ -1,0 +1,218 @@
+body{
+    padding: 0 16px 0 16px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 120%;
+    background-color: #F4FBFF;
+    color: #000000;
+}
+
+.content-box{
+    display: grid;
+    grid-template-rows: max-content max-content 1fr  ;
+    min-width: 850px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header{
+    position: sticky;
+    top: 0;
+    display: grid;
+    padding: 16px;
+    grid-template-columns: repeat(3, max-content);
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 120%;
+    background-color: #00456B;
+    align-content: center;
+    border-radius: 0 0 12px 12px;
+}
+
+.side-wrapper{
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(4, max-content);
+    gap: 8px;
+}
+
+.side-wrapper__gap32{
+    gap: 32px;
+}
+
+.refresh-btn{
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-image: url(icons/refresh.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: unset;
+    border: none;
+    cursor: pointer;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.refresh-btn:focus{
+    outline: none;
+}
+
+.refresh-btn:active{
+    opacity: 0.3;
+}
+
+.rotate {
+    transition: transform 0.3s linear;
+    transform: rotate(360deg);
+}
+
+.subheader{
+    position: sticky;
+    top: 48px;
+    display: grid;
+    padding: 0 16px 0 16px;
+    grid-template-columns: repeat(3,max-content);
+    justify-content: space-between;
+    align-content: center;
+    background-color: #00598B;
+    border-radius: 0 0 8px 8px;
+}
+
+.field-title{
+    font-size: 12px;
+    line-height: 120%;
+    color: #4EA3D2;
+}
+
+.days{
+    display: grid;
+    grid-template-rows:auto;
+}
+
+.info-card{
+    padding: 16px;
+    align-content: center;
+    display: grid;
+    gap: 8px;
+    grid-template-rows: 1fr max-content;
+    border-bottom: 1px solid #e4eaee;
+}
+
+.info-card__wrapper{
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 44px;
+    justify-content: space-between;
+}
+
+.info-card__text{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 120%;
+    color: #C0C0C0;
+}
+
+.info-card__text-main{
+    font-weight: 500;
+    color: #000000;
+}
+.info-card__description{
+    font-weight: 400;
+    font-size: 13px;
+    color: #000000;
+}
+
+.delete-info{
+    width: 44px;
+    height: 44px;
+    background-image: url(icons/close.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: unset;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.delete-info:hover{
+    transition: 0.3s;
+    background-color: #d0ecfd;
+}
+
+.delete-info:active{
+    background-color: #a6dafa;
+    transition: 0.2s;
+    transform: scale(0.9);
+    border-radius: 8px;
+}
+
+.delete-info:focus{
+    outline: none;
+}
+
+.input-field_rate{
+    padding: 0;
+    font-weight: 500;
+    font-size: 14px;
+    font-family: Montserrat,sans-serif;
+    text-align: center;
+    width: 44px;
+    height: 32px;
+    border-radius: 4px;
+    border: none;
+    background-color: #D0ECFD;
+}
+
+.input-field_rate:focus{
+    outline: none;
+    box-shadow: 0 0 0 2px #00A3FF;
+    background-color: white;
+}
+
+.text{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+.small-top{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 120%;
+    color: #708E9E;
+}
+
+.add-button{
+    height: 32px;
+    width: max-content;
+    padding: 0 16px 0 16px;
+    background-color: #00A3FF;
+    color: white;
+    border-radius: 6px;
+    border: unset;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 120%;
+}
+
+.add-button:hover{
+    background-color: #008ddf;
+}
+
+.add-button:focus{
+    outline: none;
+}
+
+.add-button:active{
+    background-color: #0075b9;
+}

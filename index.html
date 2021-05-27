@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <title>Rate</title>
+</head>
+<body>
+    <div class="content-box">
+        <div class="header">
+            <div class="side-wrapper">
+                <div class="small-top">Rate per hour</div>
+                <input class="input-field_rate" type="number" name="rate" value="0" autocomplete="off">
+                <div class="small-top" id="totalPerHour">-</div>
+                <button class="refresh-btn" id="ratePush"></button>
+            </div>
+            <div class="side-wrapper side-wrapper__gap32">
+                <div class="subheader-item">
+                    <div class="field-title">Total hours</div>
+                    <span class="text" id="total-time">- h</span>
+                </div>
+                <div class="subheader-item">
+                    <div class="field-title" id="total-days">- days</div>
+                    <span class="text" id="total-salary">- ₴</span>
+                </div>
+                <div class="subheader-item">
+                    <div class="field-title">currency</div>
+                    <div class="text" id="currency">-</div>
+                </div>
+            </div>
+            <div class="side-wrapper">
+                <div class="field-title">Hours</div>
+                <input class="input-field_rate" id="day-hours" type="number" name="day-hours" value="0" autocomplete="off">
+                <button class="add-button" id="add-hours">Add</button>
+            </div>
+        </div>
+        <div class="days">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
